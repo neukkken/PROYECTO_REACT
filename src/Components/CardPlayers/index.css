@@ -11,8 +11,10 @@
 
 .team-logo{
     width: fit-content;
+    height: auto;
     background-color: transparent;
     opacity: 30%;
+    position: sticky; 
 }
 
 .card-player .rol-nick_name .rol-img{
@@ -44,3 +46,10 @@
     font-size: 0.7em;
     color: rgba(255, 255, 255, 0.674);
 }   
+
+
+@media (max-width: 1290px){
+    .card-player{
+        width: 90%;
+    }
+}

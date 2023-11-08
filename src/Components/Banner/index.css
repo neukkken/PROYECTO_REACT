@@ -1,0 +1,11 @@
+.banner{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: linear-gradient(#111111, #000000);
+}
+
+.banner img{
+    width: 100%;
+    opacity: 60%;
+}

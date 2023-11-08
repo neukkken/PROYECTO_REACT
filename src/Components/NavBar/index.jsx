@@ -6,8 +6,8 @@ const NavBar = () => {
         const activeStyle = 'underline underline-offset-4'
 
     return(
-            <header className="bg-negro-lol w-full">
-                <nav className="px-5 h-20 flex justify-between items-center">
+            <header className="bg-negro-lol w-full main_header">
+                <nav className="px-5 h-20 flex justify-between items-center main_nav">
                     
                     <div className="flex items-center gap-5">
                         <div>

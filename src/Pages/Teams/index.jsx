@@ -30,7 +30,7 @@ const Teams = () => {
 
                 <CardTeams
                     name = 'G2 Esports'
-                    league= 'LEC - Europa'
+                    league= 'LEC - Europe'
                     logo= 'https://am-a.akamaihd.net/image?resize=200:&f=http%3A%2F%2Fstatic.lolesports.com%2Fteams%2FG2-FullonDark.png'
                 >
                 </CardTeams>

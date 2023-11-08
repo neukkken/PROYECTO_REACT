@@ -1,0 +1,48 @@
+.dev_card p,
+.dev_card img {
+    background-color: transparent;
+}
+
+.dev_card {
+    border-radius: 10px;
+    border: solid 1px #00c8c858;
+    width: 90%;
+    max-height: 100px;
+    display: flex;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.dev_card .info_dev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.dev_card .info_dev .rol {
+    animation: animText 10s infinite;
+}
+
+.dev_card img {
+    width: 70px;
+}
+
+@media (max-width: 1088px) {
+
+    .dev_card .info_dev{
+        text-align: center;
+        width: 100%;
+    }
+
+    .dev_card{
+        width: 90%;
+        
+    }
+
+    .dev_card img{
+        display: none;
+    }
+}
