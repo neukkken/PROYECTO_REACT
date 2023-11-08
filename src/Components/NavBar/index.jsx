@@ -18,19 +18,16 @@ const NavBar = () => {
 
                         <div className="text-white text-lg font-semibold h-20 items-center tags-container">
                             <a href="">
-                                    <NavLink to='/teams' 
-                                    >
-                                        <p>Teams</p>
+                                    <NavLink to='/teams'>
+                                        <p>TEAMS</p>
                                     </NavLink>
-                                
-                                <ul></ul>
+
                             </a>
 
                             <a href="">
-                                <NavLink to='/players'
-                                    >
+                                <NavLink to='/players'>
                                         <p>
-                                        Players
+                                        PLAYERS
                                         </p>
                                 </NavLink>
                                 
@@ -38,27 +35,34 @@ const NavBar = () => {
                             </a>
 
                             <a href="">
-                                <p>STANDINGS</p>
-                                <ul></ul>
-                            </a>
-
-                            <a href="">
-                                <NavLink>
-                                    
+                                <NavLink to='/*'>
+                                    <p>STANDINGS</p>    
                                 </NavLink>
-                                <p>INFO</p>
                                 <ul></ul>
                             </a>
 
                             <a href="">
-                                <p>PICK'EM</p>
+                                <NavLink to='/info'>
+                                    <p>INFO</p>    
+                                </NavLink>
+                                
+                                <ul></ul>
+                            </a>
+
+                            <a href="">
+                                    <NavLink to='/*'>
+                                        <p>PICK'EM</p>
+                                    </NavLink>
                                 <ul></ul>
                             </a>
                         </div>
                     </div>
 
                     <div>
+                    <NavLink to='/*'>
                         <button className="text-black font-semibold bg-azul-lol-opaco px-4 py-1 rounded-xl">LOGIN</button>
+                    
+                    </NavLink>
                     </div>
 
                 </nav>

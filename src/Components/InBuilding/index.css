@@ -1,0 +1,89 @@
+.in-building{
+    color: white;
+    display: flex;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 7em;
+}
+
+.in-building div{
+    margin: 0px 40px;
+    animation: anim 10s infinite;
+}
+
+@keyframes anim {
+    0%{
+        transform: translateY(550px);
+
+    }
+
+    20%{
+        transform: translateY(210px);
+        opacity: 60%;
+    }
+
+    40%{
+        transform: translateY(250px);
+        opacity: 40%;
+    }
+
+    45%{
+        transform: translateY(250px);
+        opacity: 35%;
+    }
+
+    50%{
+        transform: translateY(250px);
+        opacity: 40%;
+    }
+
+    55%{
+        transform: translateY(250px);
+        opacity: 35%;
+    }
+
+    60%{
+        transform: translateY(250px);
+        opacity: 40%;
+    }
+
+    65%{
+        transform: translateY(250px);
+        opacity: 35%;
+    }
+
+    70%{
+        transform: translateY(250px);
+        opacity: 40%;
+    }
+
+    75%{
+        transform: translateY(250px);
+        opacity: 35%;
+    }
+
+    80%{
+        transform: translateY(250px);
+        opacity: 40%;
+    }
+
+    85%{
+        transform: translateY(250px);
+        opacity: 35%;
+    }
+
+    90%{
+        transform: translateY(250px);
+        opacity: 40%;
+    }
+
+    95%{
+        transform: translateY(250px);
+        opacity: 35%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+
+}

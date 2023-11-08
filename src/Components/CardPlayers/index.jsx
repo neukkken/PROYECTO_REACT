@@ -15,6 +15,7 @@ const CardPlayers = ({name, nick_name, rol_icon, photo, team}) =>{
                     </div>
                 </div>
             </div>
+            <img className='team-logo' src={team} alt="" />
             <img className='player-photo' src={photo} alt="" />
         </div>
 

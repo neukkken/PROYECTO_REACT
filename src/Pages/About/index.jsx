@@ -1,9 +1,13 @@
-
+import Layout from "../../Components/Layout"
+import InBuilding from "../../Components/InBuilding"
 
 const About = () => {
     return(
         <Layout>
-            Home
+    
+            <InBuilding>
+                
+            </InBuilding>
         </Layout>
     )
 }
