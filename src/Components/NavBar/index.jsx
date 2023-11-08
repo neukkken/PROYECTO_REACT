@@ -1,25 +1,33 @@
-import "./index.css"
+import "./NavBar.css"
+import { NavLink } from "react-router-dom"
 
 const NavBar = () => {
-    return(
+        
+        const activeStyle = 'underline underline-offset-4'
 
-        <header className="bg-negro-lol">
+    return(
+            <header className="bg-negro-lol">
             <nav className="mx-5 h-20 flex justify-between items-center">
                 
                 <div className="flex items-center gap-5">
                     <div>
-                        <img src="https://assets.website-files.com/64c8ba1e1ec040c990d68596/65048ace6192a38a6214b6a9_002_RG_2021_FULL_LOCKUP_OFFWHITE.png" alt="" className="w-40"/>
+                        <NavLink to='/'>
+                            <img src="https://assets.website-files.com/64c8ba1e1ec040c990d68596/65048ace6192a38a6214b6a9_002_RG_2021_FULL_LOCKUP_OFFWHITE.png" alt="" className="w-32"/>
+                        </NavLink>
                     </div>
 
                     <div className="text-white text-lg font-semibold h-20 items-center tags-container">
                         <a href="">
-                            <p>SCHEDULE</p>
-                            <ul></ul>
+                            <NavLink to='/teams'>
+                                <p>Teams</p>
+                            </NavLink>
+                            
                         </a>
 
                         <a href="">
-                            <p>VODS</p>
-                            <ul></ul>
+                            <NavLink to='/players'>
+                                <p>Players</p>
+                            </NavLink>
                         </a>
 
                         <a href="">
@@ -28,8 +36,9 @@ const NavBar = () => {
                         </a>
 
                         <a href="">
-                            <p>INFO</p>
-                            <ul></ul>
+                            <NavLink to='/info'>
+                                <p>INFO</p>
+                            </NavLink>
                         </a>
 
                         <a href="">

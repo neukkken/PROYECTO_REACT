@@ -3,18 +3,47 @@ import "./index.css"
 const Schedule = ({date, time,team1, team2, team1icon, team2icon}) =>{
     return(
         <div className="main">
-            <div>
-                <p>TOMORROW</p>
-                <div className="team-info-1">
-                    <img src="" alt="" />
+            <div className="container">
+                <p className="date">TOMORROW</p>
+                <div className="team-info">
+                    <img src="https://ggscore.com/media/logo/t11070.png?47" alt="" />
                     <p>JDG</p>
                 </div>
-                <div className="team-info-2">
-                    <img src="https://files.tips.gg/static/image/teams/kt-rolster-lol.png z" alt="" />
+                <div className="team-info">
+                    <img src="https://ggscore.com/media/logo/t3946.png?97" alt="" />
                     <p>KT</p>
                 </div>
                 <p>3 AM</p>
             </div>
+
+            <div className="container">
+                <p className="date">TOMORROW</p>
+                <div className="team-info">
+                    <img src="https://ggscore.com/media/logo/t11070.png?47" alt="" />
+                    <p>JDG</p>
+                </div>
+                <div className="team-info">
+                    <img src="https://ggscore.com/media/logo/t3946.png?97" alt="" />
+                    <p>KT</p>
+                </div>
+                <p>3 AM</p>
+            </div>
+
+            <div className="container">
+                <p className="date">TOMORROW</p>
+                <div className="team-info">
+                    <img src="https://ggscore.com/media/logo/t11070.png?47" alt="" />
+                    <p>JDG</p>
+                </div>
+                <div className="team-info">
+                    <img src="https://ggscore.com/media/logo/t3946.png?97" alt="" />
+                    <p>KT</p>
+                </div>
+                <p>3 AM</p>
+            </div>
+
+            
+
         </div>
     )
 }
