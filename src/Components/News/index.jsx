@@ -1,12 +1,12 @@
 import './index.css'
 
-const News = ({title, img}) => {
+const News = (data) => {
     return(
         <div className="card-news">
-            <img src={img} alt="" />
+            <img src={data.data.photo} alt="" />
             <div className='title'>
                 <h3>
-                    {title}
+                    {data.data.name}
                 </h3>
             </div>
         </div>

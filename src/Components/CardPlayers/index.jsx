@@ -1,22 +1,25 @@
 import './index.css'
 
-const CardPlayers = ({name, nick_name, rol_icon, photo, team}) =>{
+const CardPlayers = (data) =>{
     return(
 
         <div className='card-player'>
             <div className='rol-nick_name bg'>
-                <img className='rol-img' src={rol_icon} alt="" />
+                <img className='rol-img' src={data.data.rol_img} alt="" />
                 <div className='nick_name-name'>
                     <div className='nick_name'>
-                        {nick_name}
+                        {data.data.nickname}
                     </div>
                     <div className='name'>
-                            {name}
+                            {data.data.name}
+                    </div>
+                    <div className='name'>
+                        {data.data.age} YEARS OLD
                     </div>
                 </div>
             </div>
-            <img className='team-logo' src={team} alt="" />
-            <img className='player-photo' src={photo} alt="" />
+            {/* <img className='team-logo' src={team} alt="" /> */}
+            <img className='player-photo' src={data.data.photo} alt="" />
         </div>
 
     )

@@ -1,0 +1,3 @@
+"Team": "https://kaoxdc.pythonanywhere.com/api-ficha2669739/Team/",
+"Player": "https://kaoxdc.pythonanywhere.com/api-ficha2669739/Player/",
+"News": "https://kaoxdc.pythonanywhere.com/api-ficha2669739/News/",

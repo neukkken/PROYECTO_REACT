@@ -1,8 +1,32 @@
+.main_header{
+    background-color: #111111;
+    width: 100%;
+}
+
+.main_nav{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.nav_img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .tags-container{
     display: flex;
     justify-content: space-between;
     gap: 1em;
     font-size: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    height: 20;
+    align-items: center;
 }
 
 .tags-container p{
@@ -21,5 +45,9 @@
 
 button:hover{
     background: #00C8C8;
+}
+
+@media (max-width: 886){
+
 }
 

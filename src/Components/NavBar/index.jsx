@@ -6,17 +6,17 @@ const NavBar = () => {
         const activeStyle = 'underline underline-offset-4'
 
     return(
-            <header className="bg-negro-lol w-full main_header">
-                <nav className="px-5 h-20 flex justify-between items-center main_nav">
+            <header className="main_header">
+                <nav className="main_nav">
                     
-                    <div className="flex items-center gap-5">
+                    <div className="nav_img">
                         <div>
                             <NavLink to='/'>
                                 <img src="https://assets.website-files.com/64c8ba1e1ec040c990d68596/65048ace6192a38a6214b6a9_002_RG_2021_FULL_LOCKUP_OFFWHITE.png" alt="" className="w-32 bg-transparent"/>
                             </NavLink>
                         </div>
 
-                        <div className="text-white text-lg font-semibold h-20 items-center tags-container">
+                        <div className="tags-container">
                             <a href="">
                                     <NavLink to='/teams'>
                                         <p>TEAMS</p>

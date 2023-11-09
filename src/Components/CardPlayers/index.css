@@ -1,12 +1,13 @@
 .card-player{
     display: flex;
-    width: 50%;
+    width: 30%;
     justify-content: space-between;
     overflow: hidden;
     height: 200px;
     padding: 20px;
     border: solid 0.3px rgba(255, 255, 255, 0.102);
     background-color: transparent;
+    margin: 5px;
 }
 
 .team-logo{
@@ -50,6 +51,6 @@
 
 @media (max-width: 1290px){
     .card-player{
-        width: 90%;
+        width: 80%;
     }
 }

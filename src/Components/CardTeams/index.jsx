@@ -1,13 +1,13 @@
 
 import "./CardTeams.css"
 
-const CardTeams = ({name, league, logo}) =>{
+const CardTeams = (data) =>{
     return(
             <div className="Card">
-                <img src={logo} alt="" />
+                <img src={data.data.logo} alt="" />
                 <div className="Desc">
-                    <h1>{name}</h1>
-                    <p>{league}</p>
+                    <h1>{data.data.name}</h1>
+                    <p>{data.data.league}</p>
                 </div>
             </div>
             

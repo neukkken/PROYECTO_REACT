@@ -1,29 +1,28 @@
 import Schedule from "../../Components/Schedule";
 import Layout from "../../Components/Layout";
 import News from "../../Components/News";
+import { useState, useEffect } from "react"
 
-const Home = () =>{
+
+const Home = () => {
+    
+    const [items, setItems] = useState(null)
+
+    useEffect(() => {
+        fetch('https://kaoxdc.pythonanywhere.com/api-ficha2669739/News/?format=json')
+            .then(response => response.json())
+            .then(data => setItems(data))
+    })
+
     return(
         <Layout>
-            <News
-                title = 'Worlds 2023 | Format Explainer'
-                img="https://pbs.twimg.com/media/F5_pFFhaoAADuTu.jpg:large"
-            ></News>
+            {
 
-            <News
-                title = 'Worlds 2023 | Format Explainer'
-                img="https://pbs.twimg.com/media/F5_pFFhaoAADuTu.jpg:large"
-            ></News>
+                items?.map(item => (
+                    <News key={item.id} data={item} />
+                ))
 
-            <News
-                title = 'Worlds 2023 | Format Explainer'
-                img="https://pbs.twimg.com/media/F5_pFFhaoAADuTu.jpg:large"
-            ></News>
-
-            <News
-                title = 'Worlds 2023 | Format Explainer'
-                img="https://pbs.twimg.com/media/F5_pFFhaoAADuTu.jpg:large"
-            ></News>
+            }
         
         </Layout>
     )
