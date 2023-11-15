@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 const NavBar = () => {
         
-        const activeStyle = 'underline underline-offset-4'
+    const activeStyle = 'underline underline-offset-4'
 
     return(
             <header className="main_header">

@@ -1,3 +1,5 @@
 # LoL Esports
 
-Proyecto React + Vite
+v0.0.0.5
+
+CHANGELOG: ADD CONTEXT AND DETAIL ON THE TEAM CARDS :)

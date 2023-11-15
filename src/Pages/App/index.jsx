@@ -5,6 +5,7 @@ import Teams from "../Teams"
 import "./App.css"
 import NotFound from "../NotFound"
 import NavBar from "../../Components/NavBar"
+import { TeamContextProvider } from "../../Context"
 import { useRoutes,BrowserRouter } from 'react-router-dom'
 
 const AppRoutes = () => {
@@ -24,10 +25,12 @@ const AppRoutes = () => {
 function App(){
 
     return(
-        <BrowserRouter>
-            <NavBar/>
-            <AppRoutes/>
-        </BrowserRouter>
+        <TeamContextProvider>
+            <BrowserRouter>
+                <NavBar />
+                <AppRoutes />
+            </BrowserRouter>
+        </TeamContextProvider>
     )
 
 }

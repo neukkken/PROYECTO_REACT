@@ -2,6 +2,7 @@ import "./index.css"
 import CardTeams from "../../Components/CardTeams"
 import Layout from "../../Components/Layout"
 import { useState, useEffect } from "react"
+import TeamDetail from "../../Components/teamDetail"
 
 const Teams = () => {
     
@@ -23,9 +24,11 @@ const Teams = () => {
                 {
                     items?.map(item => (
                         <CardTeams key={item.id} data={item} />
-                    ))
-                }
+                        ))
+                    }
             </div>
+
+            <TeamDetail/>
             
         </Layout>
         )

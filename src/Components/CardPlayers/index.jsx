@@ -1,6 +1,7 @@
 import './index.css'
 
-const CardPlayers = (data) =>{
+const CardPlayers = (data) => {
+    
     return(
 
         <div className='card-player'>
