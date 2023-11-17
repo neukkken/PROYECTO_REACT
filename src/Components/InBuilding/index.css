@@ -8,18 +8,18 @@
 
 .in-building div{
     margin: 0px 40px;
-    animation: anim 10s infinite;
+    animation: anim 16s infinite;
 }
 
 @keyframes anim {
     0%{
-        transform: translateY(550px);
-
+        transform: translateY(560px);
+        opacity: 5%;
     }
 
     20%{
         transform: translateY(210px);
-        opacity: 60%;
+        opacity: 20%;
     }
 
     40%{
@@ -73,7 +73,7 @@
     }
 
     90%{
-        transform: translateY(250px);
+        transform: translateY(260px);
         opacity: 40%;
     }
 
@@ -83,6 +83,8 @@
     }
 
     100%{
+        transition: ease-in-out;
+        transform: translateY(550px);
         opacity: 0%;
     }
 

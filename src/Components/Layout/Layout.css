@@ -1,0 +1,8 @@
+
+@media (max-width: 700px) {
+    .container_layout{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

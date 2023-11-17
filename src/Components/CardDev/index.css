@@ -4,6 +4,7 @@
 }
 
 .dev_card {
+    cursor: pointer;
     border-radius: 10px;
     border: solid 1px #00c8c858;
     width: 90%;

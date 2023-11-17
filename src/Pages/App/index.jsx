@@ -7,6 +7,7 @@ import NotFound from "../NotFound"
 import NavBar from "../../Components/NavBar"
 import { TeamContextProvider } from "../../Context"
 import { useRoutes,BrowserRouter } from 'react-router-dom'
+import Footer from "../../Components/Footer"
 
 const AppRoutes = () => {
 
@@ -29,6 +30,7 @@ function App(){
             <BrowserRouter>
                 <NavBar />
                 <AppRoutes />
+                <Footer/>
             </BrowserRouter>
         </TeamContextProvider>
     )

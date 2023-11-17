@@ -8,6 +8,12 @@
     align-items: center;
     cursor: pointer;
     transition: 0.5s;
+    font-size: 10px;
+}
+
+.card-news .title{
+    width: 90%;
+    text-align: center;
 }
 
 .card-news:hover{
@@ -16,12 +22,16 @@
 }
 
 @keyframes jump {
-    from{
+    0%{
         transform: translateY(0px);
     }
 
-    to{
+    50%{
         transform: translateY(-2px);
+    }
+
+    100%{
+        transform: translateY(-4px);
     }
 
 }
@@ -35,4 +45,11 @@
     color: white;
     font-weight: 600;
     font-size: 1.6em;
+}
+
+@media (max-width: 1000px) {
+    .card-news{
+        width: 60%;
+        height: auto;
+    }
 }

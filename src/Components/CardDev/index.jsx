@@ -2,6 +2,7 @@ import './index.css'
 
 const CardDev = ({name, rol, photo}) => {
     return (
+
         <div className="dev_card">
             <div className="info_dev">
                 <p className="name">{name}</p>
@@ -9,6 +10,7 @@ const CardDev = ({name, rol, photo}) => {
             </div>
             <img src={photo} alt="" />
         </div>
+        
     )
 }
 
