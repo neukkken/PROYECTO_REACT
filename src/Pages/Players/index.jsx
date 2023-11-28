@@ -1,6 +1,10 @@
 import CardPlayers from "../../Components/CardPlayers"
 import Layout from "../../Components/Layout"
-import { useState, useEffect } from "react"
+//import all the component that will be use in the website :)
+
+import { useState, useEffect } from "react" //import use effect and and usestate
+
+
 
 const Players = () => {
 
@@ -21,7 +25,7 @@ const Players = () => {
                 
                 items?.map(item => (
                     <CardPlayers key={item.id} data={item} />
-                ))
+                ))//this will map all the Cards on the home using the api
                 
             }
 

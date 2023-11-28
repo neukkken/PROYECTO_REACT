@@ -1,4 +1,4 @@
-import './index.css'
+import './index.css' //import styles
 
 const CardDev = ({name, rol, photo}) => {
     return (

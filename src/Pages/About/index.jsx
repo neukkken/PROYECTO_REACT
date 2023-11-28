@@ -1,8 +1,9 @@
-import Layout from "../../Components/Layout"
-import InBuilding from "../../Components/InBuilding"
-import Banner from "../../Components/Banner"
-import CardDev from "../../Components/CardDev"
-import './index.css'
+import Layout from "../../Components/Layout" 
+import Banner from "../../Components/Banner" 
+import CardDev from "../../Components/CardDev" 
+//import all the components that will be use in the website :)
+
+import './index.css' //import styles
 
 const About = () => {
     return(

@@ -1,8 +1,11 @@
-import "./index.css"
+import "./index.css" //import styles
+
 import CardTeams from "../../Components/CardTeams"
+import TeamDetail from "../../Components/TeamDetail"
 import Layout from "../../Components/Layout"
-import { useState, useEffect } from "react"
-import TeamDetail from "../../Components/teamDetail"
+//import all the components that will be use in the website :)
+
+import { useState, useEffect } from "react" //import use effect and and usestate
 
 const Teams = () => {
     
@@ -24,7 +27,7 @@ const Teams = () => {
                 {
                     items?.map(item => (
                         <CardTeams key={item.id} data={item} />
-                        ))
+                        ))//this will map all the Cards on the home using the api
                     }
             </div>
 

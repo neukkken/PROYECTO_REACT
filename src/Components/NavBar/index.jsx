@@ -1,5 +1,5 @@
-import "./NavBar.css"
-import { NavLink } from "react-router-dom"
+import "./NavBar.css" //import styles
+import { NavLink } from "react-router-dom" //import the navlink, this is use for when you click on one NavBar item this will direct you to that part of the website
 
 const NavBar = () => {
 

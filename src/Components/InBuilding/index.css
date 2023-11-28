@@ -13,13 +13,13 @@
 
 @keyframes anim {
     0%{
-        transform: translateY(560px);
+        transform: translateY(360px);
         opacity: 5%;
     }
 
     20%{
         transform: translateY(210px);
-        opacity: 20%;
+        opacity: 10%;
     }
 
     40%{

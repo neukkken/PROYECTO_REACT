@@ -1,4 +1,4 @@
-import './Layout.css'
+import './Layout.css' //import styles
 
 const Layout = ({children})=>{
     return(

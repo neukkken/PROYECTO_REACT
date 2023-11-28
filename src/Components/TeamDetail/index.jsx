@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { TeamContext } from "../../Context";
-import './TeamDetail.css'
+import { useContext } from "react"; //import to use the context
+import { TeamContext } from "../../Context"; //import the team context to use inside the Detail
+import './TeamDetail.css' //import styles
 
 const TeamDetail = () => {
-    const context = useContext(TeamContext)
+    const context = useContext(TeamContext) //fetch the TeamContext
 
     return (
 
