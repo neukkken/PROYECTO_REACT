@@ -8,8 +8,9 @@ import Layout from "../../Components/Layout"
 import { useState, useEffect } from "react" //import use effect and and usestate
 
 const Teams = () => {
-    
+
     const [items, setItems] = useState(null)
+    // const [players, setPlayers] = useState(null)
 
     useEffect(() => {
         fetch('http://localhost:6900/api/teams/')
@@ -17,24 +18,30 @@ const Teams = () => {
             .then(data => setItems(data.foundTeams))
     })
 
-    
+    // useEffect(() => {
+    //     fetch('http://localhost:6900/api/players/')
+    //         .then(response => response.json())
+    //         .then(dataPlayers => setPlayers(dataPlayers.foundPlayers))
+    // })
+
+
     return (
-        
-        
-        <Layout>{console.log(items)}
+
+
+        <Layout>{/* {console.log("TEAMS", items)} */}
 
             <div className="relative bottom-0 flex flex-wrap justify-center items-center max-w-screen-2xl">
                 {
                     items?.map(item => (
                         <CardTeams key={item._id} data={item} />
-                        ))//this will map all the Cards on the home using the api
-                    }
+                    ))//this will map all the Cards on the home using the api
+                }
             </div>
 
-            <TeamDetail/>
-            
+            <TeamDetail />
+
         </Layout>
-        )
+    )
 }
 
 export default Teams

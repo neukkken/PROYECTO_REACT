@@ -18,7 +18,6 @@ const TeamDetail = () => {
                     <div className="flex flex-col px-6 my-5 justify-end">
                     <span className="text-3xl font-bold">{context.teamToShow.name}</span>
                     <span className="text-xs">{context.teamToShow.league}</span>
-                        
                     </div>
                 </div>
 

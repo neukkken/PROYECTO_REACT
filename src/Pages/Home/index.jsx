@@ -6,25 +6,25 @@ import { useState, useEffect } from "react" //import use effect and and usestate
 
 
 const Home = () => {
-    
-    const [items, setItems] = useState(null) 
+
+    const [items, setItems] = useState(null)
 
     useEffect(() => {
-        fetch('https://kaoxdc.pythonanywhere.com/api-ficha2669739/News/?format=json')
+        fetch('http://localhost:6900/api/news')
             .then(response => response.json())
-            .then(data => setItems(data))
+            .then(data => setItems(data.foundNews))
     })
 
-    return(
+    return (
         <Layout>
             {
 
                 items?.map(item => (
-                    <News key={item.id} data={item} />
+                    <News key={item._id} data={item} />
                 ))//this will map all the Cards on the home using the api
 
             }
-        
+
         </Layout>
     )
 }
