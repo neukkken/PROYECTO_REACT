@@ -12,21 +12,21 @@ const Teams = () => {
     const [items, setItems] = useState(null)
 
     useEffect(() => {
-        fetch('https://kaoxdc.pythonanywhere.com/api-ficha2669739/Team/?format=json')
+        fetch('http://localhost:6900/api/teams/')
             .then(response => response.json())
-            .then(data => setItems(data))
+            .then(data => setItems(data.foundTeams))
     })
 
     
     return (
         
         
-        <Layout>
+        <Layout>{console.log(items)}
 
             <div className="relative bottom-0 flex flex-wrap justify-center items-center max-w-screen-2xl">
                 {
                     items?.map(item => (
-                        <CardTeams key={item.id} data={item} />
+                        <CardTeams key={item._id} data={item} />
                         ))//this will map all the Cards on the home using the api
                     }
             </div>

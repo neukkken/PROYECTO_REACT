@@ -9,7 +9,7 @@ const CardPlayers = (data) => {
                 <img className='rol-img' src={data.data.rol_img} alt="" />
                 <div className='nick_name-name'>
                     <div className='nick_name'>
-                        {data.data.nickname}
+                        {data.data.nick_name}
                     </div>
                     <div className='name'>
                             {data.data.name}
