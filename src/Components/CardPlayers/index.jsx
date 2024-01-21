@@ -6,7 +6,6 @@ const CardPlayers = (data) => {
 
         <div className='card-player'>
             <div className='rol-nick_name bg'>
-                <img className='rol-img' src={data.data.rol_img} alt="" />
                 <div className='nick_name-name'>
                     <div className='nick_name'>
                         {data.data.nick_name}
@@ -18,9 +17,10 @@ const CardPlayers = (data) => {
                         {data.data.age} YEARS OLD
                     </div>
                 </div>
+                    <img className='rol-img' src={data.data.rol_img} alt="" />
             </div>
-            {/* <img className='team-logo' src={team} alt="" /> */}
             <img className='player-photo' src={data.data.photo} alt="" />
+            {/* <img className='team-logo' src={team} alt="" /> */}
         </div>
 
     )

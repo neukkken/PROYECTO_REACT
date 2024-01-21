@@ -1,5 +1,8 @@
 # LoL Esports
 
-v1.0.2.1
+v1.0.3
 
-CHANGELOG: NOW ITS CONSUMMING MY OWN API IN LOCAL HOST :D
+CHANGELOG: Fix some bugs
+add description for the teams and showing it at the team deatil when you click in a team
+
+nothing more to comment :D.

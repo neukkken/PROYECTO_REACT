@@ -1,41 +1,48 @@
 .card-player{
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-    overflow: hidden;
-    height: 200px;
     padding: 20px;
-    border: solid 0.3px rgba(255, 255, 255, 0.102);
-    background-color: transparent;
-    margin: 5px;
+    margin: 20px;
+    border-radius: 40px;
+    width: 270px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #0F1519;
 }
 
-.team-logo{
-    width: fit-content;
-    height: auto;
-    background-color: transparent;
-    opacity: 30%;
-    position: sticky; 
+.card-player:hover{
+    transform: scale(105%);
 }
+
 
 .card-player .rol-nick_name .rol-img{
-    width: 3em;
+    width: 70px;
+    height: 70px;
     z-index: 100;
     background-color: transparent;
+    opacity: 50%;
+    
+    
 }
 
 .card-player .player-photo{
     width: max-content;
     background-color: transparent;
-    transform: scale(140%);
+    margin-bottom: 0.3em;
 }
 
 .card-player .rol-nick_name{
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3em;
 }
+
 
 .card-player .rol-nick_name .nick_name-name .nick_name{
     font-weight: 600;

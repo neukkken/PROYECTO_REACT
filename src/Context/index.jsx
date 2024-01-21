@@ -23,7 +23,6 @@ export const TeamContextProvider = ({ children }) => { //create of all the neces
             setTeamToShow
 
         }}>
-
             {children}
         </TeamContext.Provider>
     )

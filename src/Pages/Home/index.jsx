@@ -1,8 +1,9 @@
 import Layout from "../../Components/Layout";
 import News from "../../Components/News";
+
 //import all the components that will be use in the website :)
 
-import { useState, useEffect } from "react" //import use effect and and usestate
+import { useState, useEffect, Suspense } from "react" //import use effect and and usestate
 
 
 const Home = () => {
